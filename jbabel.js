@@ -1,14 +1,14 @@
 /*
- * BabelScript JavaScript Translation Library v0.0.1
- * http://plets.com.br/babelscript/
+ * jbabel JavaScript Translation Library v0.0.1
+ * http://plets.com.br/jbabel/
  *
- * Copyright (c) 2010 Felipe Plets
+ * Copyright (c) 2012 Felipe Plets
  *
- * Date: 2010-05-21 22:40:00 GMT-0300
- * Revision: 1
+ * Date: 2012-12-08 10:09:00 GMT-0300
+ * Revision: 2
  */
 
-var BabelScript = {
+var jbabel = {
 	// Default language is english
 	Language: "en-US",
 	// Add XML and ASP.NET RESOURCE
@@ -26,17 +26,17 @@ var BabelScript = {
 	Load: function (PsLang){
 		// If don't have PsLang than set default language.
 		if (!PsLang)
-			PsLang = BabelScript.Language;
+			PsLang = jbabel.Language;
 		// If language lib is not loaded than load it
-		if (typeof BabelScript.ResourceList[PsLang] == 'undefined'){
-			BabelScript.LoadResourceLib(PsLang);
+		if (typeof jbabel.ResourceList[PsLang] == 'undefined'){
+			jbabel.LoadResourceLib(PsLang);
 		} else { // If language lib is loaded than just translate all terms
 		  // Get library that will be used into translation
-			var oResourceLib = BabelScript.ResourceList[PsLang];
+			var oResourceLib = jbabel.ResourceList[PsLang];
 			// Pass throught all objects setting the translation into it
-			for (var i = 0; i < BabelScript.Objs.length; i++) {
+			for (var i = 0; i < jbabel.Objs.length; i++) {
 				// Get object to be translated 
-				var oObject      = BabelScript.Objs[i];
+				var oObject      = jbabel.Objs[i];
 				// Resource ID
 				var oResourceID  = oObject[1];
 				// HTML element to be translated
@@ -57,7 +57,7 @@ var BabelScript = {
 		var oScript = document.createElement('script');
 		oScript.type= "text/javascript";
 		// Set the ResourcePath + file name
-		oScript.src = BabelScript.ResourcePath + "BabelScript." + PsLang + '.js?' + new Date().getTime();
+		oScript.src = jbabel.ResourcePath + "jbabel." + PsLang + '.js?' + new Date().getTime();
 		head.appendChild(oScript);
 	}
 };
@@ -65,7 +65,7 @@ var BabelScript = {
 // jQUery extension that sets the translation resource ID to each object
 (function($) { 
   $.fn.Translate = function(PsResourceID) { 
-	BabelScript.Objs.push([this, PsResourceID]);
+	jbabel.Objs.push([this, PsResourceID]);
 	return this;
   };
 })(jQuery);
