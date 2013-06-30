@@ -1,6 +1,6 @@
 jbabel
 ======
-It is a jQuery extension that allow you to translate web pages using JavaScript in a easy and friendly way.
+It is a jQuery extension that allow you to translate web pages using JavaScript in an easy and friendly way.
 
 Cordova friendly
 ================
