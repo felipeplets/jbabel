@@ -23,6 +23,10 @@ In order to switch the language you just need to create a file i18n.LANGUAGE_COD
 ```
 Not that the language is also translated using the data-i18n attribute.
 
+Meteor package
+================
+If you use meteor you can easily install the jbabel package using the [jbabel-pkg](https://atmospherejs.com/package/jbabel-pkg)
+
 Cordova friendly
 ================
 It is very easy to translate Cordova apps using jababel. 
