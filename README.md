@@ -21,7 +21,7 @@ In order to switch the language you just need to create a file i18n.LANGUAGE_COD
 ```html
 <a href="javascript: void(0);" data-i18n-switcher="pt" data-i18n="PT"></a>
 ```
-Not that the language is also translated using the data-i18n attribute.
+Note that the language is also translated using the data-i18n attribute.
 
 Meteor package
 ================
