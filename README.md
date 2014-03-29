@@ -2,6 +2,22 @@ jbabel
 ======
 It is a jQuery extension that allow you to translate web pages using JavaScript in an easy and friendly way.
 
+Hello world
+===========
+To start using jbabel you shall create a *i18n* folder in your application and create a JSON file named *i18n.en.json* with the following content:
+
+```javascript
+{'HELLOWORLD':'Hello world!'}
+```
+
+Now creates your .html file that loads jquery and jbabel libraries and add the following content in he <body>:
+
+```html
+<h1 data-i18n="HELLOWORLD"></h1>
+```
+
+Done, you are ready with jbabel!
+
 Cordova friendly
 ================
 It is very easy to translate Cordova apps using jababel. 
