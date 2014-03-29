@@ -10,7 +10,7 @@ To start using jbabel you shall create a *i18n* folder in your application and c
 {'HELLOWORLD':'Hello world!'}
 ```
 
-Now creates your .html file that loads jquery and jbabel libraries and add the following content in he <body>:
+Now creates your .html file that loads jquery and jbabel libraries and add the following content in he body:
 
 ```html
 <h1 data-i18n="HELLOWORLD"></h1>

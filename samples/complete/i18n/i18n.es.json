@@ -1,0 +1,9 @@
+{
+	"HELLOWORLD"  	: "Hola mundo!", 
+	"SAMPLE" 	 	: "Ejemplo jbabel JSON", 
+	"LANGUAGE" 		: "Idiomas", 
+	"TRANSLATION" 	: "Traduccíon",
+	"EN" 			: "Inglés",
+	"ES" 			: "Español",
+	"PT" 			: "Portugués"
+}
