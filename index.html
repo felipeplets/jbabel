@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Jbabel by felipeplets</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Jbabel</h1>
+        <h2>Translate web pages using JavaScript in a very easy and friendly way.</h2>
+        <a href="https://github.com/felipeplets/jbabel" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="jbabel" class="anchor" href="#jbabel"><span class="octicon octicon-link"></span></a>jbabel</h1>
+
+<p>It is a jQuery extension that allow you to translate web pages using JavaScript in an easy and friendly way.</p>
+
+<h1>
+<a name="hello-world" class="anchor" href="#hello-world"><span class="octicon octicon-link"></span></a>Hello world</h1>
+
+<p>To start using jbabel you shall create a <em>i18n</em> folder in your application and create a JSON file named <em>i18n.en.json</em> with the following content:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="p">{</span><span class="s1">'HELLOWORLD'</span><span class="o">:</span><span class="s1">'Hello world!'</span><span class="p">}</span>
+</pre></div>
+
+<p>Now creates your .html file that loads jquery and jbabel libraries and add the following content in the body:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;h1</span> <span class="na">data-i18n=</span><span class="s">"HELLOWORLD"</span><span class="nt">&gt;&lt;/h1&gt;</span>
+</pre></div>
+
+<p>Done, you are ready with jbabel!</p>
+
+<h1>
+<a name="language-switcher" class="anchor" href="#language-switcher"><span class="octicon octicon-link"></span></a>Language Switcher</h1>
+
+<p>In order to switch the language you just need to create a file i18n.LANGUAGE_CODE.json (e.g.: i18n.pt.json) and add the tag attribute data-i18n-switcher to the element that will be responsible for switching the language:</p>
+
+<div class="highlight highlight-html"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"javascript: void(0);"</span> <span class="na">data-i18n-switcher=</span><span class="s">"pt"</span> <span class="na">data-i18n=</span><span class="s">"PT"</span><span class="nt">&gt;&lt;/a&gt;</span>
+</pre></div>
+
+<p>Note that the language is also translated using the data-i18n attribute.</p>
+
+<h1>
+<a name="meteor-package" class="anchor" href="#meteor-package"><span class="octicon octicon-link"></span></a>Meteor package</h1>
+
+<p>If you use meteor you can easily install the jbabel package using the <a href="https://atmospherejs.com/package/jbabel-pkg">jbabel-pkg</a></p>
+
+<h1>
+<a name="cordova-friendly" class="anchor" href="#cordova-friendly"><span class="octicon octicon-link"></span></a>Cordova friendly</h1>
+
+<p>It is very easy to translate Cordova apps using jababel. </p>
+
+<h1>
+<a name="indexable" class="anchor" href="#indexable"><span class="octicon octicon-link"></span></a>Indexable</h1>
+
+<p>jbabel pages are indexable, soon I will release a howto to teach how to build it. </p>
+
+<h1>
+<a name="whywhen-to-translate-pages-in-client-side" class="anchor" href="#whywhen-to-translate-pages-in-client-side"><span class="octicon octicon-link"></span></a>Why/When to translate pages in client side?</h1>
+
+<p>If you are building an web app using RIA and Ajax you probably don't want to reload the page just because the user changed the language, in this case you can use jBabel.</p>
+
+<h1>
+<a name="sites-using-jbabel" class="anchor" href="#sites-using-jbabel"><span class="octicon octicon-link"></span></a>Sites using jbabel</h1>
+
+<ul>
+<li><a href="http://plets.com.br">plets.com.br</a></li>
+<li><a href="http://talks.appstartup.me">talks.appstartup.me</a></li>
+<li>UbiHealth cordova app (soon the link for the app)</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/felipeplets/jbabel/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/felipeplets/jbabel/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/felipeplets/jbabel"></a> is maintained by <a href="https://github.com/felipeplets">felipeplets</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
