@@ -29,7 +29,7 @@ If you use meteor you can easily install the jbabel package using the [jbabel-pk
 
 Cordova friendly
 ================
-It is very easy to translate Cordova apps using jababel. 
+It is very easy to translate Cordova apps using jbabel. 
 
 Indexable
 =========
